@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="8dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    // kijelző
+<TextView
+    android:id="@+id/tvDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:text="0"
+    android:textSize="50sp"
+    android:textStyle="bold"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingHorizontal="12dp"/>
+
+
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        // 1. gombsor
+        <TableRow android:gravity="center">
+            <Button
+                android:id="@+id/bt7"
+                android:text="7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/bt8"
+                android:text="8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/bt9"
+                android:text="9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/btDel"
+                android:text="&#8678;"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        // 2. gombsor
+        <TableRow android:gravity="center">
+            <Button
+                android:id="@+id/bt4"
+                android:text="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/bt5"
+                android:text="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/bt6"
+                android:text="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/btDiv"
+                android:text="&#247;"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        // 3. gombsor
+        <TableRow android:gravity="center">
+            <Button
+                android:id="@+id/bt1"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/bt2"
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/bt3"
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/btMul"
+                android:text="&#215;"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        // 4. gombsor
+        <TableRow android:gravity="center"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/bt0"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_span="2"/>
+            <Button
+                android:id="@+id/btDot"
+                android:text="."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/btSub"
+                android:text="&#8722;"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        // 5. gombsor
+        <TableRow android:gravity="center"
+            android:layout_width="match_parent">
+            <Button
+                android:id="@+id/btEqual"
+                android:text="&#61;"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_span="3"/>
+            <Button
+                android:id="@+id/btAdd"
+                android:text="&#43;"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
